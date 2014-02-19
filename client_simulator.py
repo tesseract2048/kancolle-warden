@@ -173,7 +173,7 @@ class ClientSimulator:
         self.__raw_request('http://osapi.dmm.com/social/rpc', 'POST', {'st': st}, self.membercookie, data='[{"method":"people.get","params":{"userId":["@viewer"],"groupId":"@self","fields":["userType","id","name","thumbnailUrl","id","displayName"]},"id":"viewer"}]', type='application/json')
         params = {
             'refresh': 3600, 
-            'url': 'http://203.104.105.167/kcsapi/api_world/get_id/%s/1/%s' % (self.uid, self.__timestamp()),
+            'url': 'http://203.104.209.7/kcsapi/api_world/get_id/%s/1/%s' % (self.uid, self.__timestamp()),
             'httpMethod': 'GET',
             'headers': '',
             'postData': '',
@@ -184,7 +184,7 @@ class ClientSimulator:
             'getSummaries': 'false',
             'signOwner': 'true',
             'signViewer': 'true',
-            'gadget': 'http://203.104.105.167/gadget.xml',
+            'gadget': 'http://203.104.209.7/gadget.xml',
             'container': 'dmm',
             'bypassSpecCache': '',
             'getFullHeaders': 'false'
